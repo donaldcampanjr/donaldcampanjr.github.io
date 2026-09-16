@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://donaldcampanjr.github.io/boundless-band-platform/sitemap.xml

@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b0d0f">
+  <meta name="description" content="Boundless Artist requirements, Tour Manager operations, shipping, privacy boundaries, and update documentation.">
+  <title>Documentation | Boundless Artist</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&amp;family=Public+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/site.css">
+  <script src="https://unpkg.com/lucide@0.468.0/dist/umd/lucide.min.js" integrity="sha384-uTYyvsSSUZeaPhb5RbKlQa0zY/WpX/QHfvg2mczXyBQOpkWPEDy9lczyp+w7SKXu" crossorigin="anonymous" defer></script>
+  <script src="assets/site.js" defer></script>
+</head>
+<body class="docs-body">
+  <a class="skip-link" href="#main">Skip to documentation</a>
+  <header class="site-header" data-site-header>
+    <a class="brand" href="index.html" aria-label="Boundless Artist home"><span class="brand-mark" aria-hidden="true">BA</span><span>Boundless Artist</span></a>
+    <a class="button button-quiet docs-home" href="index.html"><i data-lucide="arrow-left" aria-hidden="true"></i> Product site</a>
+  </header>
+
+  <main class="docs-main" id="main">
+    <aside class="docs-nav" aria-label="Documentation sections">
+      <p>Documentation</p>
+      <a href="#requirements">Requirements</a>
+      <a href="#tour-manager">Tour Manager</a>
+      <a href="#shipping">Shipping</a>
+      <a href="#privacy">Privacy boundary</a>
+      <a href="#updates">Updates</a>
+      <a href="#acceptance">Release acceptance</a>
+    </aside>
+
+    <article class="docs-content">
+      <header class="docs-hero">
+        <p class="eyebrow"><span></span> Product documentation</p>
+        <h1>Operate with<br>clear boundaries.</h1>
+        <p>Supported requirements, workflows, and release expectations for Boundless Artist and Master Tour Manager.</p>
+      </header>
+
+      <section id="requirements">
+        <p class="docs-index">01 / Requirements</p>
+        <h2>Platform baseline</h2>
+        <div class="docs-facts">
+          <div><span>CMS</span><strong>WordPress 6.6 or newer</strong></div>
+          <div><span>Runtime</span><strong>PHP 8.1 or newer</strong></div>
+          <div><span>Presentation</span><strong>Divi 5 parent theme</strong></div>
+          <div><span>Commerce</span><strong>WooCommerce</strong></div>
+        </div>
+        <p>Boundless Artist Core owns structured artist content and Artist HQ. The child theme owns frontend behavior while native Divi 5 layouts remain editable by the site owner. WooCommerce remains authoritative for products, customers, orders, payments, tax, and checkout.</p>
+      </section>
+
+      <section id="tour-manager">
+        <p class="docs-index">02 / Master Tour Manager</p>
+        <h2>Recommended operating flow</h2>
+        <ol class="docs-steps">
+          <li><span>1</span><div><strong>Create the private tour</strong><p>Set the date range, planning status, home base, and working timezone. No public Show is created.</p></div></li>
+          <li><span>2</span><div><strong>Advance the booking</strong><p>Track inquiry, holds, contacts, offer, deposit, balance, settlement, and internal notes.</p></div></li>
+          <li><span>3</span><div><strong>Build the day</strong><p>Apply club, festival, travel, rehearsal, press, or off-day templates, then replace estimates with confirmed times.</p></div></li>
+          <li><span>4</span><div><strong>Assign the work</strong><p>Give tasks an owner, due date, priority, status, tour, and booking context.</p></div></li>
+          <li><span>5</span><div><strong>Share the minimum</strong><p>Generate revocable calendar or day-sheet links. Keep private money, contacts, notes, and documents in Artist HQ.</p></div></li>
+          <li><span>6</span><div><strong>Create a Show draft intentionally</strong><p>Only a confirmed, authorized booking action can create a Core Show draft. Publication is never automatic.</p></div></li>
+        </ol>
+        <div class="docs-note"><i data-lucide="database-backup" aria-hidden="true"></i><div><strong>Deactivation preserves operations.</strong><p>Tour records and protected files are removed only through an explicit plugin deletion. Back up both the database and protected document directory before uninstalling.</p></div></div>
+      </section>
+
+      <section id="shipping">
+        <p class="docs-index">03 / Merch fulfillment</p>
+        <h2>Measure first. Charge once.</h2>
+        <p>Every physical product needs its packed weight and outside dimensions, or an explicitly reviewed carrier default. The fulfillment origin must be one complete, internally consistent sender address.</p>
+        <div class="docs-columns">
+          <div><h3>USPS</h3><p>Domestic and international rates, labels, customs documents, tracking, voids and refunds, returns, SCAN forms, and pickups require approved account capabilities.</p></div>
+          <div><h3>UPS</h3><p>Rates, U.S. and Puerto Rico address validation, domestic labels, declared value, tracking, voids, and domestic return drafts use the configured UPS account.</p></div>
+        </div>
+        <p class="docs-warning"><strong>Unknown carrier outcome:</strong> inspect the carrier account before retrying. Never submit a potentially billable action twice because a browser timed out.</p>
+      </section>
+
+      <section id="privacy">
+        <p class="docs-index">04 / Privacy boundary</p>
+        <h2>Public facts are not private operations.</h2>
+        <table>
+          <thead><tr><th scope="col">Public fan experience</th><th scope="col">Private Artist HQ</th></tr></thead>
+          <tbody>
+            <tr><td>Show date, venue, tickets, public price note</td><td>Offers, deposits, balances, commissions</td></tr>
+            <tr><td>Music, members, videos, press, journal</td><td>Promoter, agent, production, emergency contacts</td></tr>
+            <tr><td>Products, cart, checkout, customer account</td><td>Travel confirmations, room assignments, internal notes</td></tr>
+            <tr><td>Published booking/contact page</td><td>Contracts, riders, settlements, receipts</td></tr>
+          </tbody>
+        </table>
+        <p>Tour Manager post types are private, not publicly queryable, and excluded from the public REST API. Shared day sheets and calendar feeds use revocable opaque tokens and intentionally omit financial and sensitive contact data.</p>
+      </section>
+
+      <section id="updates">
+        <p class="docs-index">05 / Licensed updates</p>
+        <h2>Verified before installation</h2>
+        <div class="update-flow" aria-label="Update delivery flow">
+          <span>Versioned source</span><i data-lucide="arrow-right" aria-hidden="true"></i>
+          <span>Release gates</span><i data-lucide="arrow-right" aria-hidden="true"></i>
+          <span>Protected vendor package</span><i data-lucide="arrow-right" aria-hidden="true"></i>
+          <span>Licensed site</span>
+        </div>
+        <ul class="docs-checklist">
+          <li>WordPress displays the native plugin update row and a prominent administrator notice.</li>
+          <li>Download URLs are short-lived and bound to an active license and site.</li>
+          <li>The installer verifies the SHA-256 package checksum after download and before installation.</li>
+          <li>Minimum Core compatibility is checked before the install action is offered.</li>
+          <li>Published versions are immutable; corrections ship as a newer version.</li>
+        </ul>
+      </section>
+
+      <section id="acceptance">
+        <p class="docs-index">06 / Release acceptance</p>
+        <h2>Public means the whole path passes.</h2>
+        <p>A production release requires more than a clean build. Anonymous desktop and mobile journeys, keyboard navigation, responsive layouts, checkout visibility, live shipping, one authorized payment and refund, update delivery, role isolation, protected files, backup restore, and cleanup must all be accepted together.</p>
+        <a class="button button-primary" href="index.html#preview">Current release status <i data-lucide="arrow-up-right" aria-hidden="true"></i></a>
+      </section>
+    </article>
+  </main>
+
+  <footer class="site-footer docs-footer">
+    <div class="footer-brand"><span class="brand-mark" aria-hidden="true">BA</span><div><strong>Boundless Artist</strong><small>Built by Boundless Ink LLC</small></div></div>
+    <a href="index.html">Return to product site</a>
+    <p>Documentation describes the current release candidate and does not replace carrier, tax, financial, or legal advice.</p>
+  </footer>
+</body>
+</html>
