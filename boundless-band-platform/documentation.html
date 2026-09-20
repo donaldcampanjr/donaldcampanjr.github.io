@@ -41,6 +41,7 @@
       <a href="#setup">Setup</a>
       <a href="#tour-manager">Tour Manager</a>
       <a href="#public-site">Public Site</a>
+      <a href="#distribution">Distribution</a>
       <a href="#acceptance">Launch + Remaining Work</a>
     </aside>
 
@@ -48,7 +49,7 @@
       <details class="docs-mobile-nav">
         <summary>Dashboard table of contents</summary>
         <nav aria-label="Mobile user manual sections">
-          <a href="#requirements">Requirements</a><a href="#dashboard">Dashboard</a><a href="#band-profile">Band Profile</a><a href="#appearance">Appearance</a><a href="#members">Members</a><a href="#music">Music</a><a href="#music-manager">Music Manager</a><a href="#shows">Shows</a><a href="#merch">Merch</a><a href="#shipping">Shipping</a><a href="#orders">Orders</a><a href="#booking">Booking</a><a href="#seo-social">SEO + Social</a><a href="#fan-access">Fan Access</a><a href="#email-marketing">Email Marketing</a><a href="#setup">Setup</a><a href="#tour-manager">Tour Manager</a><a href="#public-site">Public Site</a><a href="#acceptance">Launch + Remaining Work</a>
+          <a href="#requirements">Requirements</a><a href="#dashboard">Dashboard</a><a href="#band-profile">Band Profile</a><a href="#appearance">Appearance</a><a href="#members">Members</a><a href="#music">Music</a><a href="#music-manager">Music Manager</a><a href="#shows">Shows</a><a href="#merch">Merch</a><a href="#shipping">Shipping</a><a href="#orders">Orders</a><a href="#booking">Booking</a><a href="#seo-social">SEO + Social</a><a href="#fan-access">Fan Access</a><a href="#email-marketing">Email Marketing</a><a href="#setup">Setup</a><a href="#tour-manager">Tour Manager</a><a href="#public-site">Public Site</a><a href="#distribution">Distribution</a><a href="#acceptance">Launch + Remaining Work</a>
         </nav>
       </details>
       <header class="docs-hero">
@@ -65,8 +66,8 @@
           <div><span>Runtime</span><strong>PHP 8.1 or newer</strong></div>
           <div><span>Presentation</span><strong>Divi 5 parent theme</strong></div>
           <div><span>Commerce</span><strong>WooCommerce</strong></div>
-          <div><span>Platform</span><strong>Core 2.1.0 / Theme 2.0.0</strong></div>
-          <div><span>Tour operations</span><strong>Master Tour Manager 1.0.0</strong></div>
+          <div><span>Platform</span><strong>Core 2.0.0 / Theme 2.0.0</strong></div>
+          <div><span>Tour operations</span><strong>Master Tour Manager 0.2.0</strong></div>
         </div>
         <p>Boundless Artist Core owns structured artist content and Artist HQ. The child theme owns frontend behavior while native Divi 5 layouts remain editable by the site owner. WooCommerce remains authoritative for products, customers, orders, payments, tax, and checkout.</p>
       </section>
@@ -208,8 +209,23 @@
         <p>Home, Music, Shows, Merch, Videos, About, Booking, Journal, Sitemap, Cart, Checkout, My Account, Site Settings, and policy links form the owned public experience. Customer-facing layouts remain editable through native Divi 5 Theme Builder templates or the full Divi Builder. Divi 4 shortcode storage, Gutenberg-only owned layouts, and hardcoded public templates are outside the release contract.</p>
       </section>
 
+      <section id="distribution">
+        <p class="docs-index">19 / Distribution and owner operations</p>
+        <h2>Use each channel for one job</h2>
+        <p>GitHub Pages is the public product and documentation surface. It can link to checkout but must not process payments, license secrets, or customer data. The HTTPS store domain owns checkout and accounts. WooCommerce Orders and Analytics own sales and refunds, WooCommerce Subscriptions owns recurring billing, and Boundless Artist Store owns licenses, site activations, protected releases, and update health.</p>
+        <table>
+          <thead><tr><th scope="col">Package</th><th scope="col">Channel</th></tr></thead>
+          <tbody>
+            <tr><td>Complete free Core plugin</td><td>Candidate for WordPress.org after Plugin Check, disclosure, readme, asset, security, privacy, and fresh-install acceptance</td></tr>
+            <tr><td>Master Tour Manager</td><td>Paid GPL-compatible add-on through the owned store and authenticated update service</td></tr>
+            <tr><td>Current Divi child theme</td><td>Owned store; not a current Theme Directory candidate because it depends on the separately licensed commercial Divi parent</td></tr>
+            <tr><td>Future standalone theme</td><td>Potential WordPress.org submission only after it works without Divi and passes the current Themes Team requirements</td></tr>
+          </tbody>
+        </table>
+      </section>
+
       <section id="privacy">
-        <p class="docs-index">19 / Privacy boundary</p>
+        <p class="docs-index">20 / Privacy boundary</p>
         <h2>Public facts are not private operations.</h2>
         <table>
           <thead><tr><th scope="col">Public fan experience</th><th scope="col">Private Artist HQ</th></tr></thead>
@@ -224,7 +240,7 @@
       </section>
 
       <section id="updates">
-        <p class="docs-index">20 / Licensed updates</p>
+        <p class="docs-index">21 / Licensed updates</p>
         <h2>Verified before installation</h2>
         <div class="update-flow" aria-label="Update delivery flow">
           <span>Versioned source</span><i data-lucide="arrow-right" aria-hidden="true"></i>
@@ -242,7 +258,7 @@
       </section>
 
       <section id="acceptance">
-        <p class="docs-index">21 / Next milestone</p>
+        <p class="docs-index">22 / Next milestone</p>
         <h2>Close release acceptance</h2>
         <p>Automated staging integration passes. Production remains disabled while the operator supplies and reviews meaningful Terms content, selects it for WooCommerce, and links both canonical policy pages in the footer.</p>
         <ul class="docs-checklist">
@@ -254,6 +270,8 @@
           <li>Complete database, uploads, private-file, and package restore drills.</li>
           <li>Verify licensed update discovery, authenticated download, SHA-256 validation, installation, and recovery on staging.</li>
           <li>Keep Fan Access, Email Marketing, and Music Manager disabled unless each independent acceptance list passes.</li>
+          <li>Install the exact ZIPs on fresh WordPress and Divi 5, then complete every visitor, customer, Fan, Artist Member, Artist Manager, Administrator, and vendor-owner workflow.</li>
+          <li>Pass the selected WordPress.org and owned-store distribution checks; keep GitHub Pages free of payment and license secrets.</li>
         </ul>
         <a class="button button-primary" href="index.html#preview">Current release status <i data-lucide="arrow-up-right" aria-hidden="true"></i></a>
       </section>
