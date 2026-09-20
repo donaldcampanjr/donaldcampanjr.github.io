@@ -747,6 +747,17 @@ svg {
   padding-left: 34px;
 }
 
+.capability-grid.is-expanded article:nth-child(n+4) {
+  border-top: 1px solid var(--line-light);
+  margin-top: 38px;
+  padding-top: 38px;
+}
+
+.capability-grid.is-expanded article:nth-child(4) {
+  border-left: 0;
+  padding-left: 0;
+}
+
 .capability-icon {
   align-items: center;
   background: var(--lime);
@@ -800,6 +811,19 @@ svg {
   color: var(--lime-dark);
   content: "↳";
   margin-right: 8px;
+}
+
+.capability-grid code {
+  font-family: var(--mono);
+  font-size: 0.9em;
+}
+
+.capability-note {
+  border-left: 4px solid var(--coral);
+  color: var(--muted-light);
+  margin: 50px 0 0;
+  max-width: 850px;
+  padding: 3px 0 3px 18px;
 }
 
 .tour {
@@ -1647,6 +1671,8 @@ svg {
   align-self: start;
   border-top: 2px solid var(--text-dark);
   display: grid;
+  max-height: calc(100vh - var(--header-height) - 55px);
+  overflow-y: auto;
   position: sticky;
   top: calc(var(--header-height) + 35px);
 }
@@ -1676,6 +1702,10 @@ svg {
 
 .docs-content {
   min-width: 0;
+}
+
+.docs-mobile-nav {
+  display: none;
 }
 
 .docs-hero {
@@ -1890,6 +1920,19 @@ svg {
   font-size: 13px;
 }
 
+.docs-content td a {
+  color: var(--text-dark);
+  font-weight: 700;
+  text-underline-offset: 3px;
+}
+
+.docs-content code {
+  background: #e7e8e1;
+  font-family: var(--mono);
+  font-size: 0.9em;
+  padding: 2px 5px;
+}
+
 .update-flow {
   align-items: center;
   display: grid;
@@ -2009,6 +2052,31 @@ svg {
   .docs-home svg { height: 20px; width: 20px; }
   .docs-main { display: block; padding-top: calc(var(--header-height) + 38px); }
   .docs-nav { display: none; }
+  .docs-mobile-nav {
+    border-block: 1px solid var(--line-light);
+    display: block;
+    margin-bottom: 38px;
+  }
+  .docs-mobile-nav summary {
+    cursor: pointer;
+    font-family: var(--display);
+    font-size: 20px;
+    font-weight: 700;
+    min-height: 50px;
+    padding: 12px 0;
+    text-transform: uppercase;
+  }
+  .docs-mobile-nav nav {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    padding-bottom: 14px;
+  }
+  .docs-mobile-nav a {
+    color: var(--muted-light);
+    font-size: 12px;
+    min-height: 44px;
+    padding: 10px 8px 10px 0;
+  }
   .docs-hero h1,
   .error-page h1 { font-size: 55px; }
   .docs-content > section { padding: 58px 0; }

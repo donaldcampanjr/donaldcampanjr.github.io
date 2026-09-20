@@ -4,8 +4,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#0b0d0f">
-  <meta name="description" content="Boundless Artist requirements, Tour Manager operations, shipping, privacy boundaries, and update documentation.">
-  <title>Documentation | Boundless Artist</title>
+  <meta name="description" content="The Boundless Artist user manual: Artist HQ, content, music, merch, shipping, Fan access, self-hosted email, Tour Manager, launch, and recovery.">
+  <title>User Manual | Boundless Artist</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&amp;family=Public+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
@@ -21,21 +21,40 @@
   </header>
 
   <main class="docs-main" id="main">
-    <aside class="docs-nav" aria-label="Documentation sections">
-      <p>Documentation</p>
+    <aside class="docs-nav" aria-label="User manual sections">
+      <p>Dashboard contents</p>
       <a href="#requirements">Requirements</a>
-      <a href="#tour-manager">Tour Manager</a>
+      <a href="#dashboard">Dashboard</a>
+      <a href="#band-profile">Band Profile</a>
+      <a href="#appearance">Appearance</a>
+      <a href="#members">Members</a>
+      <a href="#music">Music</a>
+      <a href="#music-manager">Music Manager</a>
+      <a href="#shows">Shows</a>
+      <a href="#merch">Merch</a>
       <a href="#shipping">Shipping</a>
-      <a href="#privacy">Privacy boundary</a>
-      <a href="#updates">Updates</a>
-      <a href="#acceptance">Release acceptance</a>
+      <a href="#orders">Orders</a>
+      <a href="#booking">Booking</a>
+      <a href="#seo-social">SEO + Social</a>
+      <a href="#fan-access">Fan Access</a>
+      <a href="#email-marketing">Email Marketing</a>
+      <a href="#setup">Setup</a>
+      <a href="#tour-manager">Tour Manager</a>
+      <a href="#public-site">Public Site</a>
+      <a href="#acceptance">Launch + Remaining Work</a>
     </aside>
 
     <article class="docs-content">
+      <details class="docs-mobile-nav">
+        <summary>Dashboard table of contents</summary>
+        <nav aria-label="Mobile user manual sections">
+          <a href="#requirements">Requirements</a><a href="#dashboard">Dashboard</a><a href="#band-profile">Band Profile</a><a href="#appearance">Appearance</a><a href="#members">Members</a><a href="#music">Music</a><a href="#music-manager">Music Manager</a><a href="#shows">Shows</a><a href="#merch">Merch</a><a href="#shipping">Shipping</a><a href="#orders">Orders</a><a href="#booking">Booking</a><a href="#seo-social">SEO + Social</a><a href="#fan-access">Fan Access</a><a href="#email-marketing">Email Marketing</a><a href="#setup">Setup</a><a href="#tour-manager">Tour Manager</a><a href="#public-site">Public Site</a><a href="#acceptance">Launch + Remaining Work</a>
+        </nav>
+      </details>
       <header class="docs-hero">
-        <p class="eyebrow"><span></span> Product documentation</p>
-        <h1>Operate with<br>clear boundaries.</h1>
-        <p>Supported requirements, workflows, and release expectations for Boundless Artist and Master Tour Manager.</p>
+        <p class="eyebrow"><span></span> Dashboard user manual</p>
+        <h1>Run the whole<br>artist operation.</h1>
+        <p>Every Artist HQ workspace, its authority boundary, its safe operating flow, and what remains before production launch.</p>
       </header>
 
       <section id="requirements">
@@ -46,26 +65,73 @@
           <div><span>Runtime</span><strong>PHP 8.1 or newer</strong></div>
           <div><span>Presentation</span><strong>Divi 5 parent theme</strong></div>
           <div><span>Commerce</span><strong>WooCommerce</strong></div>
+          <div><span>Platform</span><strong>Core 2.1.0 / Theme 2.0.0</strong></div>
+          <div><span>Tour operations</span><strong>Master Tour Manager 1.0.0</strong></div>
         </div>
         <p>Boundless Artist Core owns structured artist content and Artist HQ. The child theme owns frontend behavior while native Divi 5 layouts remain editable by the site owner. WooCommerce remains authoritative for products, customers, orders, payments, tax, and checkout.</p>
       </section>
 
-      <section id="tour-manager">
-        <p class="docs-index">02 / Master Tour Manager</p>
-        <h2>Recommended operating flow</h2>
-        <ol class="docs-steps">
-          <li><span>1</span><div><strong>Create the private tour</strong><p>Set the date range, planning status, home base, and working timezone. No public Show is created.</p></div></li>
-          <li><span>2</span><div><strong>Advance the booking</strong><p>Track inquiry, holds, contacts, offer, deposit, balance, settlement, and internal notes.</p></div></li>
-          <li><span>3</span><div><strong>Build the day</strong><p>Apply club, festival, travel, rehearsal, press, or off-day templates, then replace estimates with confirmed times.</p></div></li>
-          <li><span>4</span><div><strong>Assign the work</strong><p>Give tasks an owner, due date, priority, status, tour, and booking context.</p></div></li>
-          <li><span>5</span><div><strong>Share the minimum</strong><p>Generate revocable calendar or day-sheet links. Keep private money, contacts, notes, and documents in Artist HQ.</p></div></li>
-          <li><span>6</span><div><strong>Create a Show draft intentionally</strong><p>Only a confirmed, authorized booking action can create a Core Show draft. Publication is never automatic.</p></div></li>
-        </ol>
-        <div class="docs-note"><i data-lucide="database-backup" aria-hidden="true"></i><div><strong>Deactivation preserves operations.</strong><p>Tour records and protected files are removed only through an explicit plugin deletion. Back up both the database and protected document directory before uninstalling.</p></div></div>
+      <section id="dashboard">
+        <p class="docs-index">02 / Artist HQ dashboard</p>
+        <h2>Start with the operating overview</h2>
+        <p>Dashboard cards show published and draft content, commerce shortcuts, Setup progress, and system status. Resolve missing WooCommerce or Divi dependencies before editing public pages. Artist Managers run day-to-day content and commerce; Administrators retain plugins, themes, users, infrastructure, and release controls.</p>
+        <table>
+          <thead><tr><th scope="col">Workspace</th><th scope="col">Purpose</th><th scope="col">Readiness</th></tr></thead>
+          <tbody>
+            <tr><td><a href="#band-profile">Band Profile</a>, <a href="#appearance">Appearance</a></td><td>Identity and visual system</td><td>Available</td></tr>
+            <tr><td><a href="#members">Members</a>, <a href="#music">Music</a>, <a href="#shows">Shows</a></td><td>Structured public content</td><td>Available</td></tr>
+            <tr><td><a href="#merch">Merch</a>, <a href="#shipping">Shipping</a>, <a href="#orders">Orders</a></td><td>WooCommerce and direct carriers</td><td>Configuration and account approval required</td></tr>
+            <tr><td><a href="#fan-access">Fan Access</a>, <a href="#email-marketing">Email Marketing</a>, <a href="#music-manager">Music Manager</a></td><td>Optional advanced modules</td><td>Implemented but fail-closed pending acceptance</td></tr>
+            <tr><td><a href="#tour-manager">Tour Manager</a></td><td>Private tour operations</td><td>Paid add-on; production acceptance in progress</td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section id="band-profile">
+        <p class="docs-index">03 / Band Profile</p>
+        <h2>One source for artist identity</h2>
+        <p>Enter the artist name, project type, tagline, origin, website, contact and booking email, logo, hero image, short biography, and full biography. HTTPS URLs and field-linked validation protect the saved record. Project type describes the act; it does not grant account authority.</p>
+      </section>
+
+      <section id="appearance">
+        <p class="docs-index">04 / Appearance</p>
+        <h2>Style packs with accessible output</h2>
+        <p>Choose a style pack, light and dark semantic colors, typography, buttons, shadows, motion, spacing, and heading treatment. Effective quick colors are adjusted separately for light and dark surfaces when needed, and invalid custom palettes are rejected at WCAG AA contrast. Visitors retain System, Light, and Dark preferences.</p>
+      </section>
+
+      <section id="members">
+        <p class="docs-index">05 / Members</p>
+        <h2>People and credits, not permissions</h2>
+        <p>Create public profiles for real members and collaborators, including role, biography, image, order, and publication state. Solo artists may leave this collection empty. An Artist Member account is a separate, explicitly linked Tour Manager identity with assignment-scoped access.</p>
+      </section>
+
+      <section id="music">
+        <p class="docs-index">06 / Music</p>
+        <h2>Public release catalog</h2>
+        <p>Manage release type, date, artwork, description, label, catalog number, display order, and Spotify, Apple Music, Bandcamp, YouTube Music, or primary links. Public release pages and archives remain editable through native Divi 5.</p>
+      </section>
+
+      <section id="music-manager">
+        <p class="docs-index">07 / Music Manager / Gated</p>
+        <h2>Private masters to public derivatives</h2>
+        <p>Music Manager stores original audio outside the web root, scans it with ClamAV, creates MP3 derivatives with FFmpeg, manages rights and takedown state, builds playlists, and exports offline RouteNote and DistroKid CSV metadata. It never collects distributor credentials or submits a release.</p>
+        <div class="docs-note"><i data-lucide="shield-alert" aria-hidden="true"></i><div><strong>Disabled until accepted.</strong><p>Private storage, scanner signatures, FFmpeg, worker execution, quotas, authorization, playback, takedown cleanup, and private-audio backup restore must pass on staging first.</p></div></div>
+      </section>
+
+      <section id="shows">
+        <p class="docs-index">08 / Shows</p>
+        <h2>Publish only fan-facing facts</h2>
+        <p>Shows own date, time, timezone, venue, public address, ticket link and label, price note, description, and cancellation state. Tour Manager creates only a draft, only after an authorized operator explicitly converts a confirmed booking.</p>
+      </section>
+
+      <section id="merch">
+        <p class="docs-index">09 / Merch</p>
+        <h2>Build measured products</h2>
+        <p>WooCommerce owns products, inventory, tax, cart, checkout, payments, refunds, and accounts. Artist HQ simplifies publication and supplies draft shipping demos for apparel, CDs, vinyl, posters, accessories, and bundles. Replace every demo value with the real product, SKU, inventory, weight, and sealed parcel dimensions before publishing.</p>
       </section>
 
       <section id="shipping">
-        <p class="docs-index">03 / Merch fulfillment</p>
+        <p class="docs-index">10 / Shipping</p>
         <h2>Measure first. Charge once.</h2>
         <p>Every physical product needs its packed weight and outside dimensions, or an explicitly reviewed carrier default. The fulfillment origin must be one complete, internally consistent sender address.</p>
         <div class="docs-columns">
@@ -75,8 +141,75 @@
         <p class="docs-warning"><strong>Unknown carrier outcome:</strong> inspect the carrier account before retrying. Never submit a potentially billable action twice because a browser timed out.</p>
       </section>
 
+      <section id="orders">
+        <p class="docs-index">11 / Orders</p>
+        <h2>Fulfill with durable intent</h2>
+        <p>Create a shipment draft from final packed measurements, request current rates, review insurance, and confirm the selected label charge. Tracking, customer notices, refunds, returns, USPS SCAN Forms, and USPS pickups remain attached to the WooCommerce order without overwriting earlier shipments.</p>
+        <p class="docs-warning"><strong>Pending or unknown is not failure.</strong> Reconcile the carrier account and use the available audited action. Do not blindly replay a label, refund, manifest, or pickup request.</p>
+      </section>
+
+      <section id="booking">
+        <p class="docs-index">12 / Booking</p>
+        <h2>Publish contact routes, not deal terms</h2>
+        <p>Set the public booking email, contact email, and website route. Keep offers, personal contacts, contracts, travel, rooms, and settlements inside private Tour Manager records.</p>
+      </section>
+
+      <section id="seo-social">
+        <p class="docs-index">13 / SEO + Social</p>
+        <h2>Control discovery and public profiles</h2>
+        <p>SEO manages titles, descriptions, HTTPS canonical URLs, social cards, and robots settings for the site and owned archives. Social accepts supported HTTPS profiles and renders only enabled entries in the public footer.</p>
+      </section>
+
+      <section id="fan-access">
+        <p class="docs-index">14 / Fan Access / Gated</p>
+        <h2>Identity, policy evidence, and consent</h2>
+        <p>The Fan capability is frontend-only and can coexist with WooCommerce Customer or WordPress Subscriber identity. Access requires verified email and acceptance of current operator-authored Terms and Privacy versions. Newsletter consent is separate, optional, unchecked, and recorded with its exact notice version.</p>
+        <p>The WooCommerce My Account Fan dashboard remains fail-closed until the code release constant, self-hosted mail transport, consent storage, policy versions, canonical policy URLs, and Administrator enablement all pass. The platform does not provide legal text.</p>
+      </section>
+
+      <section id="email-marketing">
+        <p class="docs-index">15 / Email Marketing / Gated</p>
+        <h2>First-party campaigns, local transport</h2>
+        <p>Artist Managers create consent-aware HTML and plain-text campaigns. A bounded background queue rechecks Fan authority, verified email, consent, and suppression before every handoff. Delivery uses WordPress <code>wp_mail()</code> and the operator's self-hosted MTA; there is no delivery-vendor API.</p>
+        <p>Only Administrators configure sender identity or enable delivery. SPF, DKIM, DMARC, reverse DNS, TLS, queue monitoring, bounce and complaint operations, unsubscribe, privacy, backup, restore, and controlled staging delivery must pass first. An <code>accepted</code> message was handed to the local MTA; it is not proof of destination delivery.</p>
+      </section>
+
+      <section id="setup">
+        <p class="docs-index">16 / Setup</p>
+        <h2>Six steps from identity to launch</h2>
+        <ol class="docs-steps">
+          <li><span>1</span><div><strong>Artist identity</strong><p>Complete Band Profile and the Administrator-owned global WordPress identity.</p></div></li>
+          <li><span>2</span><div><strong>Artist content</strong><p>Add content manually or validate, preview, and confirm the seven-file Setup Pack.</p></div></li>
+          <li><span>3</span><div><strong>Merch catalog</strong><p>Prepare real products, inventory, tax status, and parcel measurements.</p></div></li>
+          <li><span>4</span><div><strong>Payments and shipping</strong><p>Configure WooCommerce gateways, tax, zones, origin, and approved carrier services.</p></div></li>
+          <li><span>5</span><div><strong>Site review</strong><p>Review native Divi pages, navigation, accessibility, responsive behavior, and policies.</p></div></li>
+          <li><span>6</span><div><strong>Launch readiness</strong><p>Complete automated gates and retain human acceptance evidence.</p></div></li>
+        </ol>
+        <p>If a Setup Pack reports <code>commit_unknown</code>, stop and reconcile its journal and keyed records against the pre-import backup before retrying.</p>
+      </section>
+
+      <section id="tour-manager">
+        <p class="docs-index">17 / Master Tour Manager</p>
+        <h2>Advance the show privately</h2>
+        <ol class="docs-steps">
+          <li><span>1</span><div><strong>Create the private tour</strong><p>Set the date range, planning status, home base, and working timezone. No public Show is created.</p></div></li>
+          <li><span>2</span><div><strong>Advance the booking</strong><p>Track inquiry, holds, contacts, offer, deposit, balance, settlement, and internal notes.</p></div></li>
+          <li><span>3</span><div><strong>Build the day</strong><p>Apply club, festival, travel, rehearsal, press, or off-day templates, then replace estimates with confirmed times.</p></div></li>
+          <li><span>4</span><div><strong>Assign the work</strong><p>Give tasks an owner, due date, priority, status, tour, and booking context.</p></div></li>
+          <li><span>5</span><div><strong>Share the minimum</strong><p>Generate revocable calendar or day-sheet links. Keep private money, contacts, notes, and documents in Artist HQ.</p></div></li>
+          <li><span>6</span><div><strong>Create a Show draft intentionally</strong><p>Only a confirmed, authorized booking action can create a Core Show draft. Publication is never automatic.</p></div></li>
+        </ol>
+        <div class="docs-note"><i data-lucide="database-backup" aria-hidden="true"></i><div><strong>Deactivation preserves operations.</strong><p>Tour records and protected files are removed only through explicit plugin deletion. Back up the database and protected document directory before uninstalling.</p></div></div>
+      </section>
+
+      <section id="public-site">
+        <p class="docs-index">18 / Public Site</p>
+        <h2>Divi 5 owns presentation</h2>
+        <p>Home, Music, Shows, Merch, Videos, About, Booking, Journal, Sitemap, Cart, Checkout, My Account, Site Settings, and policy links form the owned public experience. Customer-facing layouts remain editable through native Divi 5 Theme Builder templates or the full Divi Builder. Divi 4 shortcode storage, Gutenberg-only owned layouts, and hardcoded public templates are outside the release contract.</p>
+      </section>
+
       <section id="privacy">
-        <p class="docs-index">04 / Privacy boundary</p>
+        <p class="docs-index">19 / Privacy boundary</p>
         <h2>Public facts are not private operations.</h2>
         <table>
           <thead><tr><th scope="col">Public fan experience</th><th scope="col">Private Artist HQ</th></tr></thead>
@@ -91,7 +224,7 @@
       </section>
 
       <section id="updates">
-        <p class="docs-index">05 / Licensed updates</p>
+        <p class="docs-index">20 / Licensed updates</p>
         <h2>Verified before installation</h2>
         <div class="update-flow" aria-label="Update delivery flow">
           <span>Versioned source</span><i data-lucide="arrow-right" aria-hidden="true"></i>
@@ -109,9 +242,19 @@
       </section>
 
       <section id="acceptance">
-        <p class="docs-index">06 / Release acceptance</p>
-        <h2>Public means the whole path passes.</h2>
-        <p>A production release requires more than a clean build. Anonymous desktop and mobile journeys, keyboard navigation, responsive layouts, checkout visibility, live shipping, one authorized payment and refund, update delivery, role isolation, protected files, backup restore, and cleanup must all be accepted together.</p>
+        <p class="docs-index">21 / Next milestone</p>
+        <h2>Close release acceptance</h2>
+        <p>Automated staging integration passes. Production remains disabled while the operator supplies and reviews meaningful Terms content, selects it for WooCommerce, and links both canonical policy pages in the footer.</p>
+        <ul class="docs-checklist">
+          <li>Pass the launch audit with published, non-empty Privacy and Terms pages and exact footer/checkout linkage.</li>
+          <li>Complete responsive, keyboard, screen-reader, contrast, reduced-motion, and empty/long-content review.</li>
+          <li>Complete and refund one authorized real order with tax, shipping, inventory, customer email, and merchant-account verification.</li>
+          <li>Verify transactional mail through the self-hosted MTA and reconcile its queue and logs.</li>
+          <li>Complete approved carrier acceptance without replaying an unknown money-moving result.</li>
+          <li>Complete database, uploads, private-file, and package restore drills.</li>
+          <li>Verify licensed update discovery, authenticated download, SHA-256 validation, installation, and recovery on staging.</li>
+          <li>Keep Fan Access, Email Marketing, and Music Manager disabled unless each independent acceptance list passes.</li>
+        </ul>
         <a class="button button-primary" href="index.html#preview">Current release status <i data-lucide="arrow-up-right" aria-hidden="true"></i></a>
       </section>
     </article>
@@ -120,7 +263,7 @@
   <footer class="site-footer docs-footer">
     <div class="footer-brand"><span class="brand-mark" aria-hidden="true">BA</span><div><strong>Boundless Artist</strong><small>Built by Boundless Ink LLC</small></div></div>
     <a href="index.html">Return to product site</a>
-    <p>Documentation describes the current release candidate and does not replace carrier, tax, financial, or legal advice.</p>
+    <p>This manual describes the current release candidate. It does not replace carrier, tax, financial, privacy, or legal advice.</p>
   </footer>
 </body>
 </html>

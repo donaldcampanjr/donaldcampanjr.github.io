@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#0b0d0f">
-  <meta name="description" content="Boundless Artist is the WordPress operating system for independent artists: site, merch, shows, shipping, and private tour operations in one place.">
+  <meta name="description" content="Boundless Artist is the WordPress operating system for independent artists: site, music, merch, shipping, fans, email, and private tour operations in one place.">
   <meta property="og:title" content="Boundless Artist">
   <meta property="og:description" content="Run the artist operation. Keep the fan experience clean.">
   <meta property="og:type" content="website">
@@ -38,7 +38,7 @@
       <a href="#commerce">Commerce</a>
       <a href="#pricing">Pricing</a>
       <a href="#release">Release</a>
-      <a class="nav-cta" href="#preview">Private preview</a>
+      <a class="nav-cta" href="documentation.html#dashboard">User manual</a>
     </nav>
   </header>
 
@@ -49,7 +49,7 @@
         <p class="eyebrow"><span></span> Built for working independent artists</p>
         <h1 id="hero-title">Boundless<br>Artist</h1>
         <p class="hero-lede">Run the operation. Keep the fan experience clean.</p>
-        <p class="hero-summary">One WordPress system for the artist site, music, shows, merch, fulfillment, and the private work that gets everyone through the day.</p>
+        <p class="hero-summary">One WordPress system for the artist site, protected music, shows, merch, fulfillment, Fan accounts, first-party email, and the private work that gets everyone through the day.</p>
         <div class="hero-actions">
           <a class="button button-primary" href="#platform">Explore the platform <i data-lucide="arrow-down-right" aria-hidden="true"></i></a>
           <a class="button button-quiet" href="#tour-manager">Meet Tour Manager <i data-lucide="route" aria-hidden="true"></i></a>
@@ -131,7 +131,7 @@
           <h2 id="platform-title">The artist owns the stack.</h2>
           <p>Structured content and operational controls inside WordPress. WooCommerce remains the commerce authority. Divi 5 remains the visual editor.</p>
         </header>
-        <div class="capability-grid">
+        <div class="capability-grid is-expanded">
           <article data-reveal>
             <span class="capability-icon"><i data-lucide="panels-top-left" aria-hidden="true"></i></span>
             <p class="capability-index">A</p>
@@ -153,7 +153,29 @@
             <p>Owners keep administration. Artist Managers run the operation. Customers remain in the fan experience.</p>
             <ul><li>Purpose-built permissions</li><li>Private operational records</li><li>No shared admin free-for-all</li></ul>
           </article>
+          <article data-reveal>
+            <span class="capability-icon is-coral"><i data-lucide="audio-lines" aria-hidden="true"></i></span>
+            <p class="capability-index">D / Runtime gated</p>
+            <h3>Protected music workflow</h3>
+            <p>Private masters, malware scanning, MP3 derivatives, track metadata, playlists, release lifecycle, and offline distributor exports.</p>
+            <ul><li>Private originals</li><li>FFmpeg derivatives</li><li>RouteNote and DistroKid CSV</li></ul>
+          </article>
+          <article data-reveal>
+            <span class="capability-icon is-cyan"><i data-lucide="users-round" aria-hidden="true"></i></span>
+            <p class="capability-index">E / Runtime gated</p>
+            <h3>Fan identity and portal</h3>
+            <p>A frontend-only Fan capability, verified email, versioned policy acceptance, optional consent, suppression, export, and erasure.</p>
+            <ul><li>WooCommerce account portal</li><li>No Artist HQ access</li><li>Consent stays separate</li></ul>
+          </article>
+          <article data-reveal>
+            <span class="capability-icon"><i data-lucide="send" aria-hidden="true"></i></span>
+            <p class="capability-index">F / Runtime gated</p>
+            <h3>First-party email</h3>
+            <p>Consent-aware HTML and plain-text campaigns use WordPress <code>wp_mail()</code>, a bounded queue, and the operator's self-hosted MTA.</p>
+            <ul><li>No delivery-vendor API</li><li>One-click unsubscribe</li><li>Fail-closed readiness</li></ul>
+          </article>
         </div>
+        <p class="capability-note" data-reveal><strong>Gated means implemented, not automatically enabled.</strong> Fan Access, Email Marketing, and Music Manager stay off until their runtime, privacy, recovery, and staging acceptance requirements pass.</p>
       </div>
     </section>
 
@@ -258,7 +280,7 @@
         <div class="pricing-copy" data-reveal>
           <p class="section-number">06 / Launch plan</p>
           <h2 id="pricing-title">One site.<br>The whole operating stack.</h2>
-          <p>Boundless Artist Core, the Divi 5 child theme, Master Tour Manager, licensed updates, and email support in one subscription.</p>
+          <p>Boundless Artist Core, the Divi 5 child theme, Master Tour Manager, licensed updates, and email support in one subscription. Gated modules activate only after their prerequisites pass.</p>
           <a class="button button-dark" href="mailto:support@inkfinit.com?subject=Boundless%20Artist%20launch%20access">Request launch access <i data-lucide="arrow-up-right" aria-hidden="true"></i></a>
         </div>
         <div class="pricing-options" data-reveal>
@@ -290,7 +312,7 @@
         </div>
         <div class="release-details" data-reveal>
           <div><span>Status</span><strong><i class="release-dot" aria-hidden="true"></i> Acceptance in progress</strong></div>
-          <div><span>Core dependency</span><strong>Boundless Artist Core 2.0.0+</strong></div>
+          <div><span>Platform build</span><strong>Core 2.1.0 / Theme 2.0.0</strong></div>
           <div><span>Runtime</span><strong>WordPress 6.6+ / PHP 8.1+</strong></div>
           <div><span>Delivery</span><strong>Licensed WordPress updates</strong></div>
           <div><span>Integrity</span><strong>Authenticated URL + SHA-256</strong></div>
@@ -305,7 +327,7 @@
           <h2 id="preview-title">Test it like a fan.<br>Pressure-test it like an operator.</h2>
         </div>
         <div data-reveal>
-          <p>The platform is in production acceptance, not public checkout. The release opens only after anonymous fan journeys, mobile behavior, accessibility, real fulfillment, payment/refund, backup recovery, licensing, and updates all pass together.</p>
+          <p>The platform is in production acceptance, not public checkout. The release opens only after canonical policy linkage, anonymous fan journeys, mobile behavior, accessibility, real fulfillment, payment/refund, email, backup recovery, licensing, and updates all pass together.</p>
           <a class="button button-primary" href="documentation.html#acceptance">View acceptance standard <i data-lucide="clipboard-check" aria-hidden="true"></i></a>
         </div>
       </div>
@@ -316,6 +338,7 @@
     <div class="footer-brand"><span class="brand-mark" aria-hidden="true">BA</span><div><strong>Boundless Artist</strong><small>Built by Boundless Ink LLC</small></div></div>
     <nav aria-label="Documentation">
       <a href="#pricing">Pricing</a>
+      <a href="documentation.html#dashboard">User manual</a>
       <a href="documentation.html#tour-manager">Tour Manager guide</a>
       <a href="documentation.html#shipping">Shipping guide</a>
       <a href="documentation.html#updates">Updates</a>
